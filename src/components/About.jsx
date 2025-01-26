@@ -47,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        As an accomplished software developer, I possess a wealth of experience in crafting robust applications using the power of JavaScript. My expertise extends to leading frameworks such as Node.js, React, Express.js, and Fastify. Additionally, I excel in working with diverse databases, including PostgreSQL, MongoDB and Redis. My passion for problem-solving, combined with a strong grasp of data structures and algorithms, enables me to tackle complex challenges with ease. Furthermore, my proficiency in system design ensures the development of scalable and efficient solutions. Moreover, I have developed a keen interest in the realm of DevOps, leveraging cutting-edge technologies to enhance software development processes. By incorporating my unique skill set and unwavering dedication, I consistently deliver exceptional results in every project I undertake.
+        As a skilled software developer, I specialize in crafting scalable and efficient applications while solving complex challenges. With a strong passion for problem-solving, I have a deep understanding of data structures and algorithms, enabling me to design optimized and reliable solutions. My expertise in system design allows me to build scalable architectures and microservices that meet high-performance demands. Combining analytical thinking with a commitment to continuous learning, I deliver impactful results in every project I undertake.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

@@ -12,19 +12,14 @@ import {
   mongodb,
   git,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   kubernates,
   postgresql,
   jenkins,
+  openxcell,
   sgl,
   pruthvi3d,
-  restapi
+  restapi,
+  mysql
 } from "../assets";
 
 export const navLinks = [
@@ -32,10 +27,10 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  {
-    id: "work",
-    title: "Work",
-  },
+  // {
+  //   id: "work",
+  //   title: "Work",
+  // },
   {
     id: "contact",
     title: "Contact",
@@ -44,12 +39,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "Web Developer",
+    icon: web,
   },
   {
     title: "Front end Developer",
@@ -63,32 +58,40 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "Node JS",
+    icon: nodejs,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "React JS",
+    icon: reactjs,
+  },
+  {
+    name: "MySql",
+    icon: mysql,
   },
   {
     name: "postgreSQL",
     icon: postgresql,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
   },
   {
     name: "git",
@@ -106,39 +109,38 @@ const technologies = [
     name: "jenkins",
     icon: jenkins,
   },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
 ];
 
 const experiences = [
   {
     title: "Back End Developer",
-    company_name: "Scanpoint Geomatics Limited",
-    icon: sgl,
+    company_name: "OpenXcell Technolabs",
+    icon: openxcell,
     iconBg: "#E6DEDD",
-    date: "March 2022 - Present",
+    date: "September 2023 - Present",
     points: [
-      "I meticulously designed and developed a powerful Restful API leveraging the combined potential of Node.js, PostgreSQL, and Fastify. This API serves as a comprehensive solution for performing Geospatial operations on vector data, encompassing Line, Point, and Polygon layers. Notably, it enables essential functionalities such as Buffer analysis on Point layers, Intersection analysis between two Line layers, Dump analysis on Polygon layers, and a wide array of other Geometric and spatial operations. To ensure the reliability and accuracy of the API, I created robust unit test cases utilizing Chai and Mocha frameworks.",
-      "To streamline the development process and ensure continuous integration, I established a reliable CI/CD pipeline through Jenkins. This implementation facilitated automated builds, seamless testing, and efficient deployment. Moreover, I containerized the API using Docker, enhancing its portability, scalability, and ease of deployment across various environments.",
-      "For optimal performance and fault tolerance, I incorporated load balancing and self-healing capabilities via Kubernetes. This integration ensures efficient distribution of workloads and automatically addresses any system failures, contributing to a highly resilient infrastructure.",
-      "This exceptional API plays a pivotal role in supporting the project management team by enabling the seamless display of vector data on diverse smart city portals. Moreover, it empowers users to perform spatial operations effortlessly, catering to the specific needs of managing and analyzing vector data within smart city environments.",
+      "Worked on optimizing critical send-related microservices, including withdrawal, payout, LNURL, and OneQR services, using Node.js, MySQL, and RxJS. These optimizations improved API response times and enhanced system scalability.",
+      "Integrated Cybrid, a payment orchestration tool, enabling seamless fiat-to-crypto and crypto-to-fiat transactions. Utilized RxJS for reactive programming to handle event-driven operations efficiently.",
+      "Designed and implemented a reusable NPM package, SpeedNodeJSCommon, to standardize utilities and configurations across services, reducing code duplication and boosting development efficiency.",
+      "Developed a dedicated admin service to provide real-time insights into admin-related data, enhancing operational monitoring and management capabilities.",
+      "Handled large-scale distributed transactions using asynchronous processes and the Saga pattern, ensuring fault tolerance and data consistency across microservices.",
+      "Incorporated Apache Kafka for real-time event streaming, improving the system's ability to handle high transaction volumes while ensuring reliability.",
     ],
-  },
+  },  
   {
-    title: "Front End Developer",
+    title: "Full Stack Developer",
     company_name: "Scanpoint Geomatics Limited",
     icon: sgl,
     iconBg: "#E6DEDD",
-    date: "July 2021 - March 2022",
+    date: "July 2021 - August 2023",
     points: [
-      "Employing React and Next.js, I successfully developed a series of interactive widgets within the IGiS 3D platform. which also improved seo by using server side rendringThese widgets, namely the Chart widget, Time series analysis widget, and overview widget, offer invaluable functionalities to users.",
-      "The Chart widget facilitates in-depth analysis of vector data through various graph types, such as Scatter Plot Matrix Graph, Bar graph, Tree map, and more. This versatile widget empowers users to gain comprehensive insights and visualize data in a meaningful way.",
-      "The Time series analysis widget proves instrumental in displaying and comparing vector data at specific time intervals. By leveraging this widget, the GIS team can easily observe and comprehend variations in the vector data over time, enabling better decision-making and analysis.",
-      "These widgets collectively serve as valuable tools for the GIS team, enabling them to explore a diverse range of analyses on vector data within the IGiS 3D environment. By utilizing these widgets, the team gains a deeper understanding of the data and enhances their ability to extract meaningful insights for efficient spatial analysis.",
+      "Designed and developed a powerful RESTful API using Node.js, PostgreSQL, and Fastify, enabling advanced geospatial operations on vector data, including functionalities like Buffer analysis on Point layers, Intersection analysis between Line layers, and Dump analysis on Polygon layers. Ensured reliability by writing unit test cases with Chai and Mocha frameworks.",
+      "Established a CI/CD pipeline using Jenkins for automated builds, testing, and deployments. Containerized the API with Docker for scalability and deployed it in Kubernetes, incorporating load balancing and self-healing capabilities for fault tolerance.",
+      "Developed interactive widgets for the IGiS 3D platform using React and Next.js, improving SEO through server-side rendering. Key widgets include the Chart widget for data visualization, Time Series Analysis widget for temporal data comparison, and Overview widget for enhanced insights.",
+      "The Chart widget supports various graph types, such as Scatter Plot Matrix, Bar Graphs, and Tree Maps, enabling comprehensive vector data analysis. The Time Series Analysis widget allows users to observe changes in vector data over time for informed decision-making.",
+      "Played a crucial role in enhancing the IGiS 3D platform by enabling seamless geospatial data visualization and empowering GIS teams to perform advanced spatial analyses, improving overall efficiency and usability for smart city initiatives.",
     ],
-  },
+  },  
   {
     title: "Internship",
     company_name: "Scanpoint Geomatics Limited",
@@ -150,9 +152,9 @@ const experiences = [
       "Ludo Game: Created a multiplayer Ludo game using HTML, CSS, and JavaScript, allowing multiple players to compete against each other online.",
       "Restaurant Bill Payment System: Designed and implemented a web-based application using HTML, CSS, and JavaScript, enabling customers to conveniently pay their bills online.",
       "Image Analysis Server: Developed a server application using Node.js, implementing image processing algorithms to enhance large raster images. Users can submit images and receive the enhanced output for further use.",
-      "Chat Application with Socket.io: Built a powerful server application using Node.js and Socket.io, enabling real-time communication between multiple users in a chat environment."
+      "Chat Application with Socket.io: Built a powerful server application using Node.js and Socket.io, enabling real-time communication between multiple users in a chat environment.",
     ],
-  }
+  },
 ];
 
 const testimonials = [
@@ -224,7 +226,7 @@ const projects = [
     ],
     image: pruthvi3d,
     source_code_link: "https://developer.sgligis.com/sgl_3d/theme/index.html",
-  }
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

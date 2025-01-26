@@ -9,6 +9,7 @@ import close from "./close.svg";
 
 import source_code from "./Source_Code.png"
 import css from "./tech/css.png";
+import mysql from "./tech/mysql.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -29,6 +30,7 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import openxcell from "./company/openxcell.png";
 import sgl from "./company/sgl.png";
 
 import carrent from "./carrent.png";
@@ -69,8 +71,10 @@ export {
   kubernates,
   postgresql,
   jenkins,
+  openxcell,
   sgl,
   pruthvi3d,
   restapi,
-  source_code
+  source_code,
+  mysql
 };

@@ -19,13 +19,17 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Bhargav</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a full-stack developer with <br className='sm:block hidden' />
-            experience in creating robust
-            REST <br className='sm:block hidden' />
-            APIs for the backend
-            and developing 
-            <br className='sm:block hidden' />
-            3D modules for the frontend.
+          I am a backend-focused full-stack developer with 
+<br className='sm:block hidden' />
+experience in building scalable microservices, 
+<br className='sm:block hidden' />
+optimizing REST APIs, and integrating 
+<br className='sm:block hidden' />
+payment orchestration tools. Additionally, 
+<br className='sm:block hidden' />
+I have expertise in developing 
+<br className='sm:block hidden' />
+interactive 3D modules for geospatial platforms.
             {/* I develop 3D visuals, user <br className='sm:block hidden' />
             interfaces and web applications */}
           </p>
