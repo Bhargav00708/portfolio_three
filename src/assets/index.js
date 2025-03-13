@@ -7,7 +7,7 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import source_code from "./Source_Code.png"
+import source_code from "./Source_Code.png";
 import css from "./tech/css.png";
 import mysql from "./tech/mysql.png";
 import docker from "./tech/docker.png";
@@ -38,6 +38,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import restapi from "./RestAPI.png";
 import pruthvi3d from "./Pruthvi_3D.png";
+import speed from "./image.png";
 
 export {
   logo,
@@ -76,5 +77,6 @@ export {
   pruthvi3d,
   restapi,
   source_code,
-  mysql
+  mysql,
+  speed,
 };

@@ -19,6 +19,7 @@ import {
   sgl,
   pruthvi3d,
   restapi,
+  speed,
   mysql
 } from "../assets";
 
@@ -27,10 +28,10 @@ export const navLinks = [
     id: "about",
     title: "About",
   },
-  // {
-  //   id: "work",
-  //   title: "Work",
-  // },
+  {
+    id: "work",
+    title: "Work",
+  },
   {
     id: "contact",
     title: "Contact",
@@ -186,12 +187,33 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Speed",
+    description:
+      "Speed is a crypto-based fintech platform designed to handle millions of transactions daily, ensuring secure, fast, and scalable financial operations.",
+    tags: [
+      {
+        name: "node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: speed,
+    source_code_link: "https://app.tryspeed.com/dashboard",
+  },
+  {
     name: "IGiS Rest API",
     description:
       "IGiS Rest API is a geospatial application programming interface (API) that provides a range of powerful features for performing spatial operations on raster data.",
     tags: [
       {
-        name: "nodejs",
+        name: "node.js",
         color: "green-text-gradient",
       },
       {
